@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="anti-wrinkle cream,best anti-wrinkle cream,wrinkles around mouth,best anti-wrinkle cream,face cream,wrinkles,wrinkles,crow's feet,antiaging cream,wrinkles around mouth,best anti-wrinkle cream,wrinkles under nights">
+    <meta name="description"
+        content="ETERNAGLOW RADIANCE DAY CREAM - A revolutionary anti-aging day cream that visibly reduces wrinkles by up to 74%. Clinically proven results with express delivery. Limited stock available!">
+    <title>ETERNAGLOW RADIANCE DAY CREAM - Clinically Proven Anti-Aging Solution</title>
+    <link rel="stylesheet" href="./css/order.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/470297acee.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="header-logo">
+        <img src="./images/EGR_Skincare-logo.webp" alt="EternaGlow Logo">
+    </div>
+    <hr class="header-hr">
+    <div class="content">
+
+        <div class="left-div">
+            <div class="left">
+                <form id="order" action="./additional-links/thank-you.php">
+                    <h3>Contact</h3>
+                    <input type="email" placeholder="Email" required>
+                    <input type="text" placeholder="Telephone" required>
+
+                    <h3>Delivery</h3>
+                    <div class="names">
+                        <input type="text" placeholder="First name" required>
+                        <input type="text" placeholder="Last name" required>
+                    </div>
+
+                    <input type="text" placeholder="Address" required>
+                    <input type="text" placeholder="Apartment, etc. (optional)">
+                    <div class="names">
+                        <input type="text" placeholder="Postal code" required>
+                        <input type="text" placeholder="City" required>
+                    </div>
+
+                    <h3>Payment</h3>
+                    <select name="delivery" id="delivery">
+                        <option value="Cash">Cash on delivery</option>
+                    </select>
+
+                    <button type="submit">Order Now</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="right-div">
+            <div class="right">
+
+                <div class="cream">
+                    <div class="cart">
+                        <div>
+                            <img src="./images/DayCream.webp" alt="EternaGlow Radiance Day Cream">
+                            <h3>ETERNAGLOW RADIANCE DAY CREAM</h3>
+                        </div>
+                        <p>EUR <span class="price">149,9</span>
+                        </p>
+                    </div>
+                    <p class="close" onclick="deleteCream()"><i class="fa-solid fa-xmark"></i></p>
+                </div>
+
+                <div class="serum">
+                    <div class="cart">
+                        <div>
+                            <img src="./images/360-404-max22.webp" alt="EternaGlow Radiance Face Serum">
+                            <h3>ETERNAGLOW RADIANCE FACE SERUM
+                            </h3>
+                        </div>
+                        <p>EUR <span class="price">129,9</span>
+                        </p>
+
+                    </div>
+                    <p class="close" onclick="deleteSerum()"><i class="fa-solid fa-xmark"></i></p>
+                </div>
+
+                <div class="night">
+                    <div class="cart">
+                        <div>
+                            <img src="./images/NightCream_360x4002.webp" alt="EternaGlow Radiance Night Cream">
+                            <h3>ETERNAGLOW RADIANCE NIGHT CREAM
+                            </h3>
+                        </div>
+                        <p>EUR <span class="price">149,9</span>
+                        </p>
+
+                    </div>
+                    <p class="close" onclick="deleteNight()"><i class="fa-solid fa-xmark"></i></p>
+                </div>
+
+                <hr>
+
+                <div class="cart">
+                    <p>Shipping</p>
+                    <p>FREE</p>
+
+                </div>
+
+                <div class="cart">
+                    <p><b>Total</b></p>
+                    <p class="total">EUR 429,7</p>
+                </div>
+
+                <div class="upsells-title">
+
+                </div>
+
+                <div class="upsells">
+                    <div class="upsell-cream">
+                        <img src="./images/DayCream.webp" alt="EternaGlow Radiance Day Cream">
+                        <h3>ETERNAGLOW RADIANCE DAY CREAM</h3>
+                        <p>EUR 149,9</p>
+                        <button onclick="addCream()">Add to cart</button>
+
+                    </div>
+                    <div class="upsell-serum">
+                        <img src="./images/360-404-max22.webp" alt="EternaGlow Radiance Face Serum">
+                        <h3>ETERNAGLOW RADIANCE FACE SERUM
+                        </h3>
+                        <p>EUR 129,9</p>
+                        <button onclick="addSerum()">Add to cart</button>
+                    </div>
+                    <div class="upsell-night">
+                        <img src="./images/NightCream_360x4002.webp" alt="EternaGlow Radiance Night Cream">
+                        <h3>ETERNAGLOW RADIANCE NIGHT CREAM
+                        </h3>
+                        <p>EUR 149,9</p>
+                        <button onclick="addNight()">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/index.js"></script>
+    <script src="./js/cart.js"></script>
+
+    <script type='text/javascript' src='/cdn/plugins/consent-banner/consent-banner.min.js'></script>
+    <script src='/cdn/js/fa_events.js'></script>
+    <script>
+        fa_get_data('PageViewCover');
+    </script>
+</body>
+
+</html>

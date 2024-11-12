@@ -1,0 +1,254 @@
+body {
+    font-family: "Nunito", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+form {
+    width: 90%;
+    margin: 20px auto;
+}
+
+form input {
+    width: 90%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px 7px;
+    margin-bottom: 20px;
+}
+
+.header-hr {
+    display: none;
+}
+
+.header-logo {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.content {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+input::placeholder {
+    letter-spacing: 0.8px;
+}
+
+input:focus {
+    box-shadow: 0 0 0 1px #1773b0;
+    border: 1px solid #1773b0;
+    outline: none;
+}
+
+.names {
+    display: flex;
+    flex-direction: column;
+}
+
+form button {
+    text-transform: uppercase;
+    background-color: #b40024;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 30px;
+    display: inline-block;
+    width: 90%;
+}
+
+#delivery {
+    padding: 10px 20px;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+/* Cart Styling */
+.cart {
+    display: grid;
+    grid-template-columns: 1fr 0.2fr;
+    align-items: center;
+    column-gap: 15px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.cart div {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.cart img {
+    width: 100px;
+}
+
+.cart p b {
+    font-size: 16px;
+}
+
+/* Upsells Styling */
+.upsells {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.upsells div {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.upsells div img {
+    width: 100%;
+    max-width: 200px;
+    margin: auto;
+}
+
+.upsells div button {
+    background-color: #b40024;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin: 10px auto;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Total and Subtotal Styling */
+.total {
+    font-weight: 900;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.subtotal {
+    margin-top: 30px;
+}
+
+/* Hidden Elements */
+.cream,
+.serum,
+.night {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Close Button Styling */
+.close {
+    cursor: pointer;
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+
+/* Tablet and Up */
+@media (min-width: 768px) {
+
+    .header-logo {
+        width: 30%;
+    }
+
+    .header-hr {
+        display: block;
+        margin: 0;
+    }
+    
+    .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .left {
+        align-items: flex-end;
+        padding-right: 20px;
+        margin: 25px 0;
+        position: sticky;
+        top: 0;
+        padding-top: 25px;
+    }
+
+    .names {
+        flex-direction: row;
+        gap: 5px;
+    }
+
+    form {
+        width: 80%;
+    }
+
+    .right-div {
+        background-color: #f5f5f5;
+        border-left: 1px solid #cccccc;
+        padding: 20px;
+    }
+
+
+    .bottom-line {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+}
+
+/* Desktop and Up */
+@media (min-width: 1024px) {
+    .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
+        .upsells {
+        grid-template-columns: 200px 200px 200px;
+    }
+
+    .right {
+        margin: 0 auto;
+    }
+
+    .upsells {
+        justify-content: center;
+    }
+
+    .header-logo {
+        width: 20%;
+    }
+
+    .left {
+        padding-right: 20px;
+    }
+
+    form {
+        width: 60%;
+    }
+
+    .cart img {
+        width: 120px;
+    }
+
+
+}
+
+@media (min-width: 1400px) {
+    .logo-footer, .header-logo {
+        width: 15% !important;
+    }
+}
